@@ -1,0 +1,101 @@
+:root {
+    --first-color: navy;
+    --second-color: cyan;
+    --third-color: slategrey;
+    --fourth-color: coral;
+    --fifth-color: deeppink;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--first-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* styles for header */
+header {
+    background-color: var(--second-color);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header img {
+    
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--first-color);
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+/* hero style start */
+.hero {
+    background-image: url("../images/sunrise.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 500px;
+
+}
+
+.hero-comment {
+    background-color: var(--fifth-color);
+    padding: 20px;
+    color: black;
+    font-weight: bolder;
+    border: 3px solid black;
+    margin: 410px 20px 0px auto;
+}
+
+.hero-comment:hover {
+    font-weight: lighter;
+    background-color: var(--second-color);
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+}
+
+.hero-comment:hover span::after {
+    content: "wide Web";
+    color: var(--first-color);
+    background-color: var(--second-color);
+    font-weight: lighter;
+}
