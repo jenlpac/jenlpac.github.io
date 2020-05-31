@@ -1,7 +1,7 @@
 :root {
     --first-color: navy;
-    --second-color: cyan;
-    --third-color: slategrey;
+    --second-color: paleturquoise;
+    --third-color: thistle;
     --fourth-color: coral;
     --fifth-color: deeppink;
 }
@@ -19,35 +19,40 @@ body{
 
 /* styles for header */
 header {
-    background-color: var(--second-color);
+    background-image: url("../images/sunrise.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
     padding: 20px 35px;
+    background-color: var(--first-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
+    z-index: 9999;
 }
 
-header img {
-    
-}
 
-header h1 {
+header h1 a {
     font-weight: bold;
     font-size: 36px;
-    color: var(--first-color);
+    color: var(--fifth-color);
     margin: 0;
+    align-items: flex-start;
 }
 
 header a {
     text-decoration: none;
     color: var(--first-color);
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 header nav {
-    margin: 7px 0;
+    margin: auto 20px;
+    align-items: flex-end;
 }
 
 header nav ul {
@@ -64,6 +69,12 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+footer {
+    color: var(--fourth-color);
+    font-size: 14px;
+    margin: 0 0px 10px 10px;
+}
+
 section {
     padding: 60px;
 }
@@ -72,13 +83,13 @@ section {
 .hero {
     background-image: url("../images/sunrise.jpg");
     background-size: cover;
+    background-attachment: fixed;
     height: 550px;
-    background-position: 100%;
+    background-position: 80%;
     display: flex;
     justify-content: center;
-    
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .hero-comment {
@@ -92,7 +103,7 @@ section {
 
 .hero-comment:hover {
     font-weight: lighter;
-    background-color: var(--second-color);
+    background-color: var(--third-color);
     color: var(--first-color);
     border: 1px solid var(--first-color);
 }
@@ -100,10 +111,39 @@ section {
 .hero-comment:hover span::after {
     content: "wide Web";
     color: var(--first-color);
-    background-color: var(--second-color);
+    background-color: var(--third-color);
     font-weight: lighter;
 }
 
 body {
-    background-color: lightcyan;
+    background-color: var(--second-color);
+}
+
+.portfolio {
+    margin: auto;
+}
+
+.section-title {
+    font-size: 36px;
+    border-bottom: 2px double var(--fifth-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 30%;
+}
+
+.portfolio {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.profile {
+    background: var(--third-color)
+}
+.profile p {
+    margin: 0 auto;
+    line-height: 1.2;
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
 }
