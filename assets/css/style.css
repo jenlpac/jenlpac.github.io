@@ -27,6 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    top: 0;
 }
 
 header img {
@@ -63,18 +64,21 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+section {
+    padding: 60px;
+}
+
 /* hero style start */
 .hero {
     background-image: url("../images/sunrise.jpg");
     background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
+    height: 550px;
+    background-position: 100%;
     display: flex;
     justify-content: center;
+    
     flex-wrap: wrap;
-    align-items: flex-start;
-    height: 500px;
-
+    align-items: flex-end;
 }
 
 .hero-comment {
@@ -83,7 +87,7 @@ header nav ul li a {
     color: black;
     font-weight: bolder;
     border: 3px solid black;
-    margin: 410px 20px 0px auto;
+    margin: 410px 20px 10px auto;
 }
 
 .hero-comment:hover {
@@ -98,4 +102,8 @@ header nav ul li a {
     color: var(--first-color);
     background-color: var(--second-color);
     font-weight: lighter;
+}
+
+body {
+    background-color: lightcyan;
 }
