@@ -1,7 +1,7 @@
 :root {
     --first-color: navy;
-    --second-color: paleturquoise;
-    --third-color: thistle;
+    --second-color: lightcyan;
+    --third-color: lavenderblush;
     --fourth-color: coral;
     --fifth-color: deeppink;
 }
@@ -95,15 +95,15 @@ section {
 .hero-comment {
     background-color: var(--fifth-color);
     padding: 20px;
-    color: black;
+    color: var(--first-color);
     font-weight: bolder;
-    border: 3px solid black;
+    border: 3px solid var(--first-color);
     margin: 410px 20px 10px auto;
 }
 
 .hero-comment:hover {
     font-weight: lighter;
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     color: var(--first-color);
     border: 1px solid var(--first-color);
 }
@@ -111,7 +111,7 @@ section {
 .hero-comment:hover span::after {
     content: "wide Web";
     color: var(--first-color);
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     font-weight: lighter;
 }
 
@@ -119,19 +119,41 @@ body {
     background-color: var(--second-color);
 }
 
+.flex-section {
+    display: flex;
+}
+/*
 .portfolio {
     margin: auto;
 }
+*/
+.flex-section h2 {
+    text-align: right;
+    margin: 20px;
+    border-right: 2px solid var(--fifth-color);
+    padding: 20px;
+    font-size: 46px;
+    flex: 1 30%;
+}
 
-.section-title {
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 2 70%;
+}
+
+/*
+section h2 {
     font-size: 36px;
-    border-bottom: 2px double var(--fifth-color);
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
+    border-right: 2px double var(--fifth-color);
+    padding: 20px;
+    text-align: right;
+    margin: 0 15px 35px auto;
     width: 30%;
 }
 
+/*
 .portfolio {
     margin: 0 auto;
     width: 80%;
@@ -140,10 +162,17 @@ body {
 .profile {
     background: var(--third-color)
 }
-.profile p {
-    margin: 0 auto;
-    line-height: 1.2;
-    width: 80%;
-    font-size: 16px;
-    text-align: center;
+
+*/
+.section-content p {
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: left;
+}
+
+.contact-info li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
