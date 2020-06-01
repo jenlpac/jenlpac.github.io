@@ -157,6 +157,7 @@ body {
 }
 
 .project-grid-item {
+    border: 1px solid var(--fourth-color);
     padding: 30px 60px;
     display: flex;
 }
@@ -193,8 +194,10 @@ body {
     background-size: cover;
 }
 
-.image-headline {}
-
+.image {
+    background: var(--fourth-color);
+    padding: 10px;
+}
 
 /*style profile paragraph */
 .section-content p {
