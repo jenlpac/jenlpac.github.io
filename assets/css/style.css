@@ -163,7 +163,7 @@ body {
 }
 
 .box1 {
-    background-image: url("../images/Runbuddy.jpg");
+    background-image: url("../images/sootheR.jpg");
     background-size: cover;
     grid-column: 1/3;
     grid-row: 1/3;
@@ -175,7 +175,7 @@ body {
 }
 
 .box3 {
-    background-image: url("../images/sootheR.jpg");
+    background-image: url("../images/Runbuddy.jpg");
     background-size: cover;
 }
 
