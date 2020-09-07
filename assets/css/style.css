@@ -163,29 +163,29 @@ body {
 }
 
 .box1 {
-    background-image: url("../images/sootheR.jpg");
+    background-image: url("../images/cardsocial.JPG");
     background-size: cover;
     grid-column: 1/3;
     grid-row: 1/3;
 }
 
 .box2 {
-    background-image: url("../images/Horizeon.jpg");
+    background-image: url("../images/sootheR.jpg");
     background-size: cover;
 }
 
 .box3 {
-    background-image: url("../images/Runbuddy.jpg");
+    background-image: url("../images/Horizeon.jpg");
     background-size: cover;
 }
 
 .box4 {
-    background-image: url("../images/Torquestretch.jpg");
+    background-image: url("../images/Runbuddy.jpg");
     background-size: cover;
 }
 
 .box5 {
-    background-image: url("../images/SAriverwalk.jpg");
+    background-image: url("../images/Torquestretch.jpg");
     background-size: cover;
 }
 
